@@ -1,6 +1,11 @@
 project : adding ALB infront of the ASG
 Launch template contains the configuration to initialize the EC2 instnace in the ASG
+we will configure the min and max number of instances requires
 ASG helps you in scaling out(adding EC2 instances) and scaling in(remoVING EC2)  OF the EC2 instances
 steps: first create security groups fro ASG and ALB for ALB allowing traffic from HTTP and for ASG allowing traffic from TCP and SSH
-Create ALB and attach SG 
+while creating the ASG itself we need to create the load balancer (NLB OR ALB)
+After creation attach the SG created to the LB 
+select the autoscaling mechanisms avaialble  like target scaling ,step scalling,predictive scaling
+try to impose the load on the EC2  instance and check if a new EC2 is automatically created or not.....
+
 ##mohan
